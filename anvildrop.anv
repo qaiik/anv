@@ -1,0 +1,17 @@
+game version mc.meta.versions;
+
+XCoord f = game.blocks["iron_block"].x;
+XCoord t = game.blocks["diamond_block"].x;
+
+
+List anvils = summon("anvil")
+
+each anvil of anvils:
+    teleport (anvil, atrandom(name="anvil_armor_stand"))
+    anvil.on("HitGround", Function kill = cf(anv){
+      anv.entity.kill()
+    })
+    
+    
+
+

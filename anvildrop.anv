@@ -4,7 +4,7 @@ XCoord f = game.blocks["iron_block"].x;
 XCoord t = game.blocks["diamond_block"].x;
 
 
-List anvils = summon("anvil")
+List anvils = summon("anvil", 15)
 
 each anvil of anvils:
     teleport (anvil, atrandom(name="anvil_armor_stand"))
